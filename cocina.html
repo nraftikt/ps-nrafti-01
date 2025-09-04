@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolloExpress - Cocina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="logo" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="23" fill="#FFBE0B"/>
+                <circle cx="18" cy="18" r="5" fill="#E63946"/>
+                <circle cx="32" cy="18" r="5" fill="#E63946"/>
+                <path d="M15 35 A20 15 0 0 0 35 35" stroke="#E63946" stroke-width="3" fill="none"/>
+            </svg>
+            <h1 class="brand-name">PolloExpress</h1>
+        </div>
+        <div style="color: white; display: flex; align-items: center;">
+            <span>Cocina: Roberto Silva</span>
+            <button class="btn btn-secondary" style="margin-left: 15px;" onclick="location.href='login.html'">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <nav>
+        <div>
+            <a href="vendedor.html">VENTAS</a>
+            <a href="ventas.html">PEDIDOS</a>
+            <a href="#" class="active">COCINA</a>
+        </div>
+        <div style="position: relative;">
+            <a href="#">Notificaciones <span class="notification-badge">3</span></a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <main style="grid-column: 1 / -1;">
+            <h2>Lista de Pedidos</h2>
+            
+            <div class="orders-container">
+                <div class="order-card">
+                    <div class="order-header">
+                        <div>
+                            <strong>#123 - Juan Julian Jumez</strong>
+                        </div>
+                        <span class="order-status status-ready">Listo para entregar</span>
+                    </div>
+                    <div>
+                        <p><strong>Productos:</strong> 2 Pollos a la Brasa</p>
+                        <p><strong>Observaciones:</strong> MUUUUUUUUCHA salsa extra</p>
+                        <p><strong>Hora:</strong> 00:01</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-success">Notificar entrega</button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div class="order-header">
+                        <div>
+                            <strong>#124 - María González</strong>
+                        </div>
+                        <span class="order-status status-preparing">En preparación</span>
+                    </div>
+                    <div>
+                        <p><strong>Productos:</strong> 1 Combo Familiar</p>
+                        <p><strong>Observaciones:</strong> Sin papas, extra ensalada</p>
+                        <p><strong>Hora:</strong> 00:15</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-success">Marcar como listo</button>
+                        <button class="btn btn-warning">Necesita ayuda</button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div class="order-header">
+                        <div>
+                            <strong>#126 - Ana Martínez</strong>
+                        </div>
+                        <span class="order-status status-pending">Pendiente</span>
+                    </div>
+                    <div>
+                        <p><strong>Productos:</strong> 3 Pollos Spiedo, 2 Papas Fritas</p>
+                        <p><strong>Observaciones:</strong> Bien dorado por favor</p>
+                        <p><strong>Hora:</strong> 00:25</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Comenzar preparación</button>
+                        <button class="btn btn-danger">Cancelar pedido</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
